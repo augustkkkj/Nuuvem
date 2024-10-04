@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-*{
+* {
     border: none;
     outline: none;
     margin: 0;
@@ -11,71 +11,69 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background: linear-gradient(-180deg, rgba(5, 121, 161, 1) 0%, rgba(21, 29, 39, 1) 30%);
-    
-    /* background-image: url(img/BG.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 110vh; */
+.circu {
+    z-index: -1;
+    background: radial-gradient(#09c 0, #151d27 60%);
+    position: absolute;
+    top: -60%;
+    right: 5%;
+    width: 90%;
+    height: 108%;
 }
 
-.menu{
+body {
+    background: #151d27;
+}
+
+.menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #151D27;
     width: 100%;
     max-height: 79px;
-    margin: 0 auto;;
+    margin: 0 auto;
 }
 
 .search-container input {
     padding-left: 10px;
     width: 15%;
-    margin-top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     background: #263241;
     color: #fff;
 }
 
-.logo{
-    align-items: center;
+.logo {
     display: flex;
+    align-items: center;
     gap: 4px;
+    padding: 20px 0 20px 30px;
 }
 
-.logo .name-nuuvem{
+.logo .name-nuuvem {
     height: 20px;
 }
 
-.logo{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-}
-
-.logo .logo-nuuvem{
+.logo .logo-nuuvem {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
 
-.nav-links a{
+.nav-links a {
     color: white;
     font-size: 1.1rem;
 }
 
-.bi-chevron-down{
+.bi-chevron-down {
     font-size: 13px;
 }
 
@@ -86,37 +84,28 @@ body{
     text-align: center;
 }
 
-
-
 .search__input {
     font-family: inherit;
     font-size: inherit;
     background-color: #263241;
-    border: none;
     color: #646464;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding: 10px;
     border-radius: 4px;
     width: 8em;
     transition: all ease-in-out .5s;
     margin-right: -2rem;
 }
-  
 
-  
 .search__input::-webkit-input-placeholder {
     font-weight: 100;
     color: #ccc;
 }
-  
+
 .bi-search {
     height: 1.3em;
     width: 1.3em;
     color: #96a6b7ff;
 }
-
-
 
 .container {
     display: flex;
@@ -130,7 +119,7 @@ body{
     align-items: center;
 }
 
-.cart{
+.cart {
     background-color: #354658;
     color: white;
     padding: 8px 12px;
@@ -138,23 +127,23 @@ body{
     font-size: 14px;
 }
 
-.cart i{
+.cart i {
     width: 20px; 
     height: auto;
     margin-right: 6px;
 }
 
-
-.img-user img{
+.img-user img {
     width: 40px;
     border-radius: 50%;
     margin: 10px;
 }
 
-
-
 .user-info {
+    color: white;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .user-info p {
@@ -165,35 +154,24 @@ body{
     border-radius: 50%;
 }
 
-.user-info .drops{
+.user-info .drops {
     color: #ffd000;
     font-size: 13px;
 }
 
-.user-info{
-    color: white;
-}
-
-.user-info{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.img-user{
+.img-user {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.img-user i{
+.img-user i {
     color: white;
 }
 
-/*cards*/
+/* Cards */
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,7 +195,7 @@ main{
     margin-bottom: 19px;
 }
 
-.nav .links-nave  li {
+.nav .links-nave li {
     margin: 0 20px;
 }
 
@@ -239,15 +217,15 @@ main{
     transition: width 0.3s ease;
 }
 
-
 .nav .links-nave li a:hover::after {
     width: 100%;
 }
-.links-nave a{
+
+.links-nave a {
     transition: 0.3s ease;
 }
 
-.links-nave a:hover{
+.links-nave a:hover {
     font-weight: bolder;
 }
 
@@ -258,7 +236,7 @@ main{
     justify-items: center;
 }
 
-.card{
+.card {
     background-color: #243446;
     border-radius: 5px;
     overflow: hidden;
@@ -267,45 +245,23 @@ main{
     width: 250px;
 }
 
-.card img, .small-card img {
+.card img, .small-cardinhos img {
     width: 100%;
     border-radius: 10px;
 }
 
-.small-card p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: white;
-}
-
-
-.small-card {
+.small-cardinhos {
     width: 248px;
     background-color: #243446;
     padding: 10px;
     border-radius: 5px;
 }
 
-.cardinhos {
-    width: 100%;
-}
-
-.malcards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-}
-
-.small-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.small-card p {
-    text-align: center;
+.small-cardinhos p {
     margin-top: 10px;
     font-size: 14px;
+    color: white;
+    text-align: center;
 }
 
 .cards-section {
@@ -318,24 +274,6 @@ main{
     gap: 30px; 
 }
 
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-.cardinhos {
-    width: 100%;
-
-}
-
 .malcards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -343,13 +281,6 @@ main{
     justify-items: center;
 }
 
-.small-card img {
+.cardinhos {
     width: 100%;
-    border-radius: 10px;
-}
-
-.small-card p {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
 }
